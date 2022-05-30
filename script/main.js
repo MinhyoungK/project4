@@ -20,6 +20,7 @@ $(function(){
 		video.pause();
 		videoPath = "video/"+videoList[n]+".mp4";
 		video.setAttribute("src",videoPath);
+		video.setAttribute("playsinline","");
 		$("#my_video").hide().css({opacity:0});
 		video.play();
 
@@ -66,9 +67,6 @@ $(function(){
 		pageN= n+1;
 		pagination();
 	});
-
-
-
 
 	var windowH;
 	var categoryFlag=false;
