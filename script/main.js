@@ -58,7 +58,7 @@ $(function(){
 	$("#header .main_txt .controller .btn .next").click(e=>{
 		e.preventDefault();
 		if(n > 0){
-			n=n-1;
+			n=n+1;
 		}
 		else{
 			n=total;
@@ -69,7 +69,7 @@ $(function(){
 	$("#header .main_txt .controller .btn .prev").click(e=>{
 		e.preventDefault();
 		if(n < total){
-			n=n+1;
+			n=n-1;
 		}
 		else{
 			n=0;
