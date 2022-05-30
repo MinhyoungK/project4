@@ -144,7 +144,6 @@ $(function(){
 	$(".wrapper").mousewheel((e, delta) =>{
 		if($("html").is(":animated"))return;
 		if(w<720) return;
-
 		if(delta > 0){
 			if(sectionN > 0){
 				sectionN=sectionN-1;
