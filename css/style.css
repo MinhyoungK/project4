@@ -187,6 +187,7 @@ a {
 	transform: translate(-50%,-50%);
 	text-align: center;
 	transition: .3s;
+	z-index: 1000;
 }
 #header .main_txt dt{
 	font-family: 'Montserrat', sans-serif;
