@@ -11,6 +11,7 @@ $(function(){
 	var videoPath="";
 	video.muted=true;
 	video.play();
+	video.setAttribute("playsinline","");
 
 	function pagination(){
 		$("#header .controller .pagination span").text(pageN +"/"+(total+1));
@@ -20,7 +21,6 @@ $(function(){
 		video.pause();
 		videoPath = "video/"+videoList[n]+".mp4";
 		video.setAttribute("src",videoPath);
-		video.setAttribute("playsinline","");
 		$("#my_video").hide().css({opacity:0});
 		video.play();
 
